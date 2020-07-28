@@ -58,4 +58,26 @@
 #             return True
 #         else:
 #             return False
+
+
+#####################Problem 3###################
+# https://leetcode.com/problems/group-anagrams/
+
+# class Solution:
+#     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+#         hash_table = {}
         
+#         for word in strs:
+#             key = ''.join(sorted(word))
+#             if key in hash_table:
+#                 hash_table[key].append(word)
+#             else:
+#                 hash_table[key] = []
+#                 hash_table[key].append(word)
+        
+#         anagrams = []
+                
+#         for key, value in hash_table.items():
+# 	        anagrams.append(value)
+        
+#         return anagrams
