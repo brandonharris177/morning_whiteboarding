@@ -149,3 +149,6 @@ def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         
         # fast reached the end of the linked list 
 		return False
+
+#####################################Day 2 Problem 1####################################
+

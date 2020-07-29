@@ -19,38 +19,64 @@
 #         self.val = val
 #         self.next = next
 
-class Solution:
-    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        first_str = ''
-        second_str = ''
-        while l1 != None:
-            first_str = first_str + str(l1.val)
-            l1 = l1.next
-        while l2 != None:
-            second_str = second_str + str(l2.val)
-            l2 = l2.next
-        first_str = ''.join(reversed(first_str))
-        second_str = ''.join(reversed(second_str))
+# class Solution:
+#     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+#         first_str = ''
+#         second_str = ''
+#         while l1 != None:
+#             first_str = first_str + str(l1.val)
+#             l1 = l1.next
+#         while l2 != None:
+#             second_str = second_str + str(l2.val)
+#             l2 = l2.next
+#         first_str = ''.join(reversed(first_str))
+#         second_str = ''.join(reversed(second_str))
         
-        total = str(int(first_str) + int(second_str))
+#         total = str(int(first_str) + int(second_str))
         
-        total_list = []
+#         total_list = []
          
-        for number in total:
-            total_list.append(int(number))
+#         for number in total:
+#             total_list.append(int(number))
             
-        total_list.insert(0, None)
+#         total_list.insert(0, None)
 
-        print(total_list)
+#         print(total_list)
         
-        new_list = ListNode(None)
-        current_new = new_list
+#         new_list = ListNode(None)
+#         current_new = new_list
 
-        while len(total_list) > 1:
-                current_new.next = ListNode(total_list[-1])
-                current_new = current_new.next
-                total_list.pop()
+#         while len(total_list) > 1:
+#                 current_new.next = ListNode(total_list[-1])
+#                 current_new = current_new.next
+#                 total_list.pop()
 
-        return new_list.next
+#         return new_list.next
+
+
+#####################Problem 3#######################
+# https://leetcode.com/problems/linked-list-cycle-ii/
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+# class Solution:
+#     def detectCycle(self, head: ListNode) -> ListNode:
+        
+#         node_set = set()
+        
+#         node = head
+        
+#         while node.next != None:
+#             if node in node_set:
+#                 return node
+#             else:
+#                 node_set.add(node)
+#             node = node.next
+
+#         return -1
             
             
