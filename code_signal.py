@@ -123,3 +123,26 @@
 #             break
             
 #     return spy
+
+# def matrixElementsSum(matrix):
+#     haunted = set()
+    
+#     value = 0
+#     story = 0
+#     while story < len(matrix):
+
+#         for num in range(0, len(matrix[story])):
+#             if matrix[story][num] == 0:
+#                 haunted.add(num)
+        
+        
+#         for num in haunted:
+#             matrix[story][num] = 0
+            
+#         for num in matrix[story]:
+#             value = value + num
+        
+#         story += 1 
+        
+#     return value
+    
